@@ -1,12 +1,4 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -22,4 +14,64 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  color: #2e2f42;
+}
+
+.label {
+  display: block;
+  color: #2e2f42;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+.form {
+  max-width: 270px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #2e2f42;
+}
+
+input[type='number'],
+input[type='radio'] {
+  margin-left: 5px;
+}
+
+fieldset {
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+
+  &:hover {
+    background-color: #6c8cff;
+  }
 }
